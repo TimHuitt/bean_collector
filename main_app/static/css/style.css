@@ -8,8 +8,6 @@
   --dark-bean: rgb(57, 75, 50);
   --light-bean: rgb(219, 252, 206);
 }
-html {
-}
 body {
   display: flex;
   min-height: 100vh;
