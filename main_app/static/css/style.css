@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 60px;
+  background-color: #393f48;
+  color: #ddd;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  color: #444;
+  background: #ccc;
+}
+.header-title {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.header-title h1 {
+  margin: 0;
+}
+.header-links {
+  display: flex;
+}
+.header-links a {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.header-links a:hover {
+  background: #fff;
+}
+.home-description {
+  max-width: 500px;
+  text-align: center;
+}
+.bean-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 8px 0;
+  padding: 8px;
+  color: #222;
+  background: #ccc;
+  border-radius: 10px;
+}
+.bean-container h4,
+.bean-container p {
+  margin: 0;
+}
+.bean-wrapper {
+  padding: 8px;
+  background: #eee;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bean-wrapper:hover {
+  background:#fff;
+}
+.about-beans {
+  text-align: center;
+}
+.bean-legacy {
+  max-width: 400px;
+}
