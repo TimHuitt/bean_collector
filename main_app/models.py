@@ -8,3 +8,6 @@ class Bean(models.Model):
   image = models.TextField(max_length=250)
   common_uses = models.TextField(max_length=250)
   nutritional_info = models.TextField(max_length=250)
+
+  def __str__(self):
+    return self.name

@@ -1,0 +1,18 @@
+{% extends '../index.html' %}
+{% block content %}
+
+  <div class="bean-container">
+    <div class="bean-wrapper">
+      <div class="bean-details">
+        <h4>{{bean.name}} Bean</h4>
+        <small>{{bean.origin}}</small>
+        <p>{{bean.description}}</p>
+        <h6>Cooking Time:</h6>
+        <p>{{bean.cooking_time}}</p>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+

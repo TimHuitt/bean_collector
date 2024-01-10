@@ -5,15 +5,17 @@
 
 {% for bean in beans %}
   <div class="bean-container">
-    <div class="bean-wrapper">
-      <div class="bean-details">
-        <h4>{{bean.name}} Beans!</h4>
-        <small>{{bean.origin}}</small>
-        <p>{{bean.description}}</p>
-        <h6>Cooking Time:</h6>
-        <p>{{bean.cooking_time}}</p>
+    <a href="{% url 'details' bean.id %}">
+      <div class="bean-wrapper">
+        <div class="bean-details">
+          <h4>{{bean.name}} Beans!</h4>
+          <small>{{bean.origin}}</small>
+          <p>{{bean.description}}</p>
+          <h6>Cooking Time:</h6>
+          <p>{{bean.cooking_time}}</p>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
 {% endfor %}
 
