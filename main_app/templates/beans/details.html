@@ -11,6 +11,10 @@
         <p>{{bean.cooking_time}}</p>
       </div>
     </div>
+    <div>
+      <a href="{% url 'beans_update' bean.id %}">Edit</a>
+      <a href="{% url 'beans_delete' bean.id %}">Delete</a>
+    </div>
   </div>
 
 {% endblock %}

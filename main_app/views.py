@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Bean
+from django.views.generic.edit import CreateView, DeleteView, UpdateView
 
 # beanData = [
 #     {'name': 'Pinto', 'origin': 'North America', 'description': 'Earthy, nutty flavor', 'cooking_time': '1-2 hours', 'image': ''},
@@ -33,3 +34,16 @@ def bean_details(request, bean_id):
   return render(request, 'beans/details.html', {
     'bean': beanData
   })
+
+class BeanCreate(CreateView):
+  model = Bean
+  fields = '__all__'
+
+class BeanDelete(DeleteView):
+  model = Bean
+  success_url = '/beans'
+
+class BeanUpdate(UpdateView):
+  model = Bean
+  fields = '__all__'
+
